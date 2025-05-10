@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script> 
+    <script src="js/app.js" defer></script>
+
+</head>
+<body>
+    
+<div class="wrapper">
+    <div class="content">
+        <header class="main-header">
+            <div class="mask-top"></div>
+            <button id="themeToggle" class="theme-toggle-btn" >Переключить тему</button>
+        
+        
+            <div class="layers">
+                <div class="layer__header">
+                    <div class="layers_caption">Ваша погода на сегодняшний день:</div>
+                    <input type = "text" class="search_input" placeholder = "Введите ваш город">
+                        <div class="layers_title"></div>
+                </div>
+            <div class="layer layers__base"></div>
+            <div class="layer layers__front"></div>
+            <div class="layer layers__front"></div>
+            </div>
+        </header>
+        
+        <img src="./img/image.png" class="stick">
+        
+        
+        
+        <article class="main-article">
+            <img src="./img/mask-bottom.png" class="mask-bottom-flow">
+            <div class="main-article__content">
+                <h2 class="main-article__header">
+                    
+                </h2> 
+                <div class="weather__panel">
+        
+                    <div class="panel_today">
+                        <h3>Температура:</h3>
+                        <div id="temp"> </div>
+                    </div>
+        
+                    <div class="panel_wind">
+                        <h3>Скорость:</h3>
+                        <div id="wind"> </div>
+                    </div>
+        
+                    <div class="panel_side">
+                        <h3>Направление:</h3>
+                        <div id="wind-dir"> </div>
+                    </div>
+                    
+                    <div class="panel_vlag">
+                        <h3>Влажность:</h3>
+                        <div id="humidity"> </div>
+                    </div>
+        
+                    <div class="panel_pres">
+                        <h3>Давление:</h3>
+                        <div id="pressure"> </div>
+                    </div>
+                        
+                    <div class="panel_clouds">
+                        <h3>Облачность:</h3>
+                        <div id="clouds"></div>
+                    </div>
+        
+                </div>
+                <div class="weather__panelw">
+                </div>
+            </div>
+        </article>        
+    </div>
+</div>
+
+</body>
+</html>
